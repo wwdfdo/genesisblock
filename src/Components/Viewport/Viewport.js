@@ -2,41 +2,78 @@ import React from "react";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { TiTick } from "react-icons/ti";
 
 function Viewport() {
   const slideItemInfo = [
     {
-      title: <span>Get moving in done.</span>,
+      title: (
+        <span>
+          Get <span className="text-[#008fb4] font-extrabold">moving in</span>{" "}
+          done.
+        </span>
+      ),
       tasks: ["Removals", "End of lease cleaning", "Wifi set up"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/989ad81b13d6ea81.png?width=438&height=393",
     },
     {
-      title: "Get pet care done.",
+      title: (
+        <span>
+          Get <span className="text-[#008fb4] font-extrabold">pet care</span>{" "}
+          done.
+        </span>
+      ),
       tasks: ["Puppy training", "Carpet cleaning", "Photography"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/4a8888135ef14b2b.png?width=438&height=393",
     },
     {
-      title: "Get home maintenance done.",
+      title: (
+        <span>
+          Get{" "}
+          <span className="text-[#008fb4] font-extrabold">
+            home maintenance
+          </span>{" "}
+          done.
+        </span>
+      ),
       tasks: ["Hedge trimming", "Handyperson jobs", "Painting"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/1296fd1d2ad0c413.png?width=438&height=393",
     },
     {
-      title: "Get kids parties done.",
+      title: (
+        <span>
+          Get{" "}
+          <span className="text-[#008fb4] font-extrabold">kids parties</span>{" "}
+          done.
+        </span>
+      ),
       tasks: ["Catering", "Face painting", "Post-party cleaning"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/99a7e70fe7fa8146.png?width=438&height=393",
     },
     {
-      title: "Get starting a business done.",
+      title: (
+        <span>
+          Get{" "}
+          <span className="text-[#008fb4] font-extrabold">
+            starting a business
+          </span>{" "}
+          done.
+        </span>
+      ),
       tasks: ["Logo design", "Build a website", "Accounting"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/045932d8b718dd29.png?width=438&height=393",
     },
     {
-      title: "Get more done.",
+      title: (
+        <span>
+          Get <span className="text-[#008fb4] font-extrabold">more</span> done.
+        </span>
+      ),
       tasks: ["Post any task", "Pick the best person", "Get it done"],
       imgUrl:
         "https://eu7cmie.cloudimg.io/v7/www.airtasker.com/static/assets/4be6949d77814c49.png?width=438&height=393",
@@ -49,7 +86,11 @@ function Viewport() {
         <h2 className="text-black text-5xl ">{item.title}</h2>
         <ul className="flex flex-col font-semibold text-lg gap-10">
           {item.tasks.map((task, index) => (
-            <li key={index}>{task}</li>
+            <li key={index} className="flex items-center gap-2">
+              {" "}
+              <TiTick color="#008fb4" size={24} />
+              {task}
+            </li>
           ))}
         </ul>
       </div>
@@ -60,9 +101,9 @@ function Viewport() {
   ));
 
   return (
-    <div className="pt-28 relative">
+    <div className="pt-16 relative">
       <svg
-        className="w-[45%] h-auto absolute right-[4%] -top-12"
+        className="w-[45%] h-auto absolute right-[4%] -top-24"
         width="616"
         height="592"
         viewBox="0 0 616 592"
