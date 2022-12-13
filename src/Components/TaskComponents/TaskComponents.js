@@ -1,9 +1,10 @@
 import React from "react";
 import TaskCard from "../TaskCard/TaskCard";
+import { FaPlay } from "react-icons/fa";
 
 function TaskComponents() {
   return (
-    <div>
+    <div className="flex flex-col justify-center">
       <h2 className="text-center py-10 text-2xl font-bold">
         Post your first task in seconds
       </h2>
@@ -32,7 +33,12 @@ function TaskComponents() {
         <TaskCard />
       </div>
 
-      <button>See how it works</button>
+      <button className="mt-10 flex justify-center items-center gap-4 text-[#008fb4] font-semibold text-md hover:bg-[#f6f8fd] hover:transition hover:ease-in hover:rounded-xl w-[200px] mx-auto py-3 px-3 cursor-pointer">
+        <span>
+          <FaPlay />
+        </span>
+        See how it works
+      </button>
     </div>
   );
 }

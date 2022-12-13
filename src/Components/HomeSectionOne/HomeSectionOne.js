@@ -5,7 +5,7 @@ import Viewport from "../Viewport/Viewport";
 
 function HomeSectionOne() {
   return (
-    <div>
+    <div className="pb-10">
       <Viewport />
       <TaskComponents />
     </div>
