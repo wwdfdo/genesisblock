@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { TiTick } from "react-icons/ti";
 
 function Viewport() {
+  const [corouselItems, setCorouselItems] = useState([]);
+
   const slideItemInfo = [
     {
       title: (
@@ -35,7 +37,7 @@ function Viewport() {
           <span className="text-[#008fb4] font-extrabold">
             home maintenance
           </span>{" "}
-          done.
+          <br /> done.
         </span>
       ),
       tasks: ["Hedge trimming", "Handyperson jobs", "Painting"],
@@ -61,7 +63,7 @@ function Viewport() {
           <span className="text-[#008fb4] font-extrabold">
             starting a business
           </span>{" "}
-          done.
+          <br /> done.
         </span>
       ),
       tasks: ["Logo design", "Build a website", "Accounting"],
@@ -82,9 +84,9 @@ function Viewport() {
 
   const carouselItems = slideItemInfo.map((item) => (
     <div className="flex justify-between px-[10%]">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5">
         <h2 className="text-black text-5xl ">{item.title}</h2>
-        <ul className="flex flex-col font-semibold text-lg gap-10">
+        <ul className="flex flex-col font-semibold text-lg gap-2">
           {item.tasks.map((task, index) => (
             <li key={index} className="flex items-center gap-2">
               {" "}
@@ -101,7 +103,7 @@ function Viewport() {
   ));
 
   return (
-    <div className="pt-16 relative">
+    <div className="pt-16 pb-32 relative">
       <svg
         className="w-[45%] h-auto absolute right-[4%] -top-24"
         width="616"
@@ -131,19 +133,26 @@ function Viewport() {
         disableDotsControls
         disableButtonsControls
         infinite
-        animationDuration={100}
-        autoPlayInterval={2000}
+        animationDuration={200}
+        autoPlayInterval={1000}
         animationType="fadeout"
         mouseTracking
         items={carouselItems}
       />
-      <div className="flex gap-10 absolute justify-center left-[11%] bottom-2 text-lg font-semibold">
-        <button className="bg-[#008fb4] px-4 py-2 rounded-3xl text-white">
-          Post your task for free
-        </button>
-        <button className="border-2 border-[#008fb4] px-4 py-2 font-bold rounded-3xl text-[#008fb4]">
-          Earn money as a tasker
-        </button>
+      <div className="flex gap-5 absolute justify-center left-[10%] bottom-[20%] text-lg font-semibold items-center flex-col">
+        <div className="flex gap-8">
+          <button className="bg-[#008fb4] px-4 py-2 rounded-3xl text-white">
+            Post your task for free
+          </button>
+          <button className="border-2 border-[#008fb4] px-4 py-2 font-bold rounded-3xl text-[#008fb4]">
+            Earn money as a tasker
+          </button>
+        </div>
+        <div className="flex gap-8 text-sm">
+          <span> +1M customers</span>
+          <span> +2.5M tasks done</span>
+          <span> +4M user reviews</span>
+        </div>
       </div>
     </div>
   );

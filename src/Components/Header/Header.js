@@ -9,7 +9,7 @@ function Header() {
         <div className="flex  items-center h-[100%] border-r-[1px] border-r-[#008fb4]">
           <Logo />
         </div>
-        <div className=" flex justify-between flex-1 px-6 font-semibold text-[0.875rem]">
+        <div className=" flex justify-between flex-1 px-6 font-semibold text-[0.825rem]">
           <ul className="flex gap-6 items-center">
             {navbarMenuItems.map((navmenuItem) => (
               <li className={`${navmenuItem.styles}`}>{navmenuItem.title}</li>
