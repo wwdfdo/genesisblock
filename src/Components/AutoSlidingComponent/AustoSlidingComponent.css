@@ -1,0 +1,32 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 7));
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  animation: scroll 60s linear infinite;
+
+  width: calc(350px * 14);
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  height: 180px;
+  width: 350px;
+}
