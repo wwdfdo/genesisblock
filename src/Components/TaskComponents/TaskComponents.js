@@ -33,7 +33,7 @@ function TaskComponents() {
         <TaskCard />
       </div>
 
-      <button className="mt-10 flex justify-center items-center gap-4 text-[#008fb4] font-semibold text-md hover:bg-[#f6f8fd] hover:transition hover:ease-in hover:rounded-xl w-[200px] mx-auto py-3 px-3 cursor-pointer">
+      <button className="mt-10 flex justify-center items-center gap-4 text-[#008fb4] font-semibold text-md hover:bg-[#f6f8fd] hover:transition hover:ease-in hover:rounded-xl w-[250px] mx-auto py-3 px-3 cursor-pointer">
         <span>
           <FaPlay />
         </span>
