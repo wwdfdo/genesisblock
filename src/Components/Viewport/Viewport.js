@@ -1,12 +1,8 @@
-import React, { useState, useMemo } from "react";
-
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { TiTick } from "react-icons/ti";
 
 function Viewport() {
-  const [corouselItems, setCorouselItems] = useState([]);
-
   const slideItemInfo = [
     {
       title: (
@@ -133,7 +129,7 @@ function Viewport() {
         disableDotsControls
         disableButtonsControls
         infinite
-        animationDuration={200}
+        animationDuration={500}
         autoPlayInterval={1000}
         animationType="fadeout"
         mouseTracking
