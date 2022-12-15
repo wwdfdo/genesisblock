@@ -129,13 +129,13 @@ function Viewport() {
         disableDotsControls
         disableButtonsControls
         infinite
-        animationDuration={500}
+        animationDuration={1000}
         autoPlayInterval={1000}
         animationType="fadeout"
         mouseTracking
         items={carouselItems}
       />
-      <div className="flex gap-5 absolute justify-center left-[10%] bottom-[20%] text-lg font-semibold items-center flex-col">
+      <div className="flex gap-5 absolute justify-center left-[10%] bottom-[20%] text-lg font-semibold items-center flex-col transition delay-500 duration-500">
         <div className="flex gap-8">
           <button className="bg-[#008fb4] px-4 py-2 rounded-3xl text-white">
             Post your task for free

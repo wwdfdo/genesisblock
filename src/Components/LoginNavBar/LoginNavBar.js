@@ -2,9 +2,9 @@ import React from "react";
 
 function LoginNavBar({ loginavMenu }) {
   return (
-    <ul className="flex items-center gap-6">
+    <div className="flex items-center gap-6">
       {loginavMenu.map((loginavItem) => (
-        <li
+        <div
           className={`${loginavItem.hovertextstyles} cursor-pointer h-full items-center flex`}
         >
           <span
@@ -12,9 +12,9 @@ function LoginNavBar({ loginavMenu }) {
           >
             {loginavItem.title}
           </span>
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 
