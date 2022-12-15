@@ -8,6 +8,7 @@ export const navbarMenuItems = [
   {
     id: 2,
     title: "Catogories",
+    url: "/catogories",
     hovertextstyles: " hover:text-[#008fb4]",
     textstyles: "h-full flex items-center",
     hoverstyles: `before:w-full before:bg-[#008fb4] before:block before:absolute before:top-0 before:h-[3px] before:opacity-100 before:translate-y-0 before:opacity-0 hover:before:opacity-100 hover:before:transition hover:before:delay-200 hover:before:duration-300  active:before:opacity-100`,
@@ -15,6 +16,7 @@ export const navbarMenuItems = [
   {
     id: 3,
     title: "Browse Tasks",
+    url: "/ourtasks",
     hovertextstyles: " hover:text-[#008fb4]",
     textstyles: "h-full flex items-center",
     hoverstyles: `before:w-full before:bg-[#008fb4] before:block before:absolute before:top-0 before:h-[3px] before:opacity-100 before:translate-y-0 before:opacity-0 hover:before:opacity-100 hover:before:transition hover:before:delay-200 hover:before:duration-300`,
@@ -22,6 +24,7 @@ export const navbarMenuItems = [
   {
     id: 4,
     title: "How it works",
+    url: "/howitworks",
     hovertextstyles: " hover:text-[#008fb4]",
     textstyles: "h-full flex items-center",
     hoverstyles: `before:w-full before:bg-[#008fb4] before:block before:absolute before:top-0 before:h-[3px] before:opacity-100 before:translate-y-0 before:opacity-0 hover:before:opacity-100 hover:before:transition hover:before:delay-200 hover:before:duration-300`,
