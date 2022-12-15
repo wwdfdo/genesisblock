@@ -23,7 +23,7 @@ function AutoSlidingComponent() {
                 </div>
                 <div>{autoslidingcard.price}</div>
               </div>
-              <div>
+              <div className=" ">
                 <p>
                   {" "}
                   <AiTwotoneStar color="green" />

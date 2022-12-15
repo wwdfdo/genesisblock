@@ -1,5 +1,5 @@
 import "./App.css";
-import AutoSlidingComponent from "./Components/AutoSlidingComponent/AutoSlidingComponent";
+// import AutoSlidingComponent from "./Components/AutoSlidingComponent/AutoSlidingComponent";
 import Header from "./Components/Header/Header";
 import HomeSectionOne from "./Components/HomeSectionOne/HomeSectionOne";
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header />
       <HomeSectionOne />
-      <AutoSlidingComponent />
+      {/* <AutoSlidingComponent /> */}
     </div>
   );
 }
