@@ -1,8 +1,14 @@
 import React from "react";
+import AutoSlidingComponent from "../AutoSlidingComponent/AutoSlidingComponent";
 import HomeSectionOne from "../HomeSectionOne/HomeSectionOne";
 
 function Homepage() {
-  return <HomeSectionOne />;
+  return (
+    <div>
+      <HomeSectionOne />
+      <AutoSlidingComponent />
+    </div>
+  );
 }
 
 export default Homepage;
